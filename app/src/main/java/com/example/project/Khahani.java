@@ -4,14 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MissaActivity extends AppCompatActivity {
+public class Khahani extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_missa);
+        setContentView(R.layout.activity_khahani);
 
-        getSupportActionBar().setTitle("पवित्र मिस्सा");
+        getSupportActionBar().setTitle("बायबल कहाणी");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

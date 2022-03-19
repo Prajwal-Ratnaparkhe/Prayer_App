@@ -45,6 +45,55 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
 
+
+                    else  if(finalI==2)
+                    {
+                        Intent intent = new Intent(MainActivity.this,Bhajan.class);
+                        startActivity(intent);
+                    }
+
+                    else  if(finalI==3)
+                    {
+                        Intent intent = new Intent(MainActivity.this,Novena.class);
+                        startActivity(intent);
+                    }
+
+                    else  if(finalI==4)
+                    {
+                        Intent intent = new Intent(MainActivity.this,MalaV.class);
+                        startActivity(intent);
+                    }
+
+                    else  if(finalI==5)
+                    {
+                        Intent intent = new Intent(MainActivity.this,DharmaV.class);
+                        startActivity(intent);
+                    }
+
+                    else  if(finalI==6)
+                    {
+                        Intent intent = new Intent(MainActivity.this,Vachan.class);
+                        startActivity(intent);
+                    }
+
+                    else  if(finalI==7)
+                    {
+                        Intent intent = new Intent(MainActivity.this,Nivedan.class);
+                        startActivity(intent);
+                    }
+
+                    else  if(finalI==8)
+                    {
+                        Intent intent = new Intent(MainActivity.this,Khahani.class);
+                        startActivity(intent);
+                    }
+
+                    else  if(finalI==9)
+                    {
+                        Intent intent = new Intent(MainActivity.this,SthiPrar.class);
+                        startActivity(intent);
+                    }
+
                 }
             });
         }

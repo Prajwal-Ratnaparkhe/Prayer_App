@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/drawable/sp.xml" value="0.1" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_bhajan.xml" value="0.1037037037037037" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_main2.xml" value="0.2234375" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_mala_v.xml" value="0.10822401614530777" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_missa.xml" value="0.25" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_novena.xml" value="0.10065590312815338" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_prarthana.xml" value="0.2" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_splash.xml" value="0.11865942028985507" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/fragment_fragment1.xml" value="0.13043478260869565" />

@@ -24,6 +24,11 @@ public class PrarthanaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prarthana);
 
+
+
+        getSupportActionBar().setTitle("प्रार्थना");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         tabLayout=(TabLayout) findViewById(R.id.tabLayout1);
         tabItem1 =(TabItem) findViewById(R.id.tab1);
         tabItem2 =(TabItem) findViewById(R.id.tab2);
@@ -67,4 +72,7 @@ public class PrarthanaActivity extends AppCompatActivity {
         });
 
     }
+
+
+
 }

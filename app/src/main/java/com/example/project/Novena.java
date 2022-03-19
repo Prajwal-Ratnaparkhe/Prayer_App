@@ -4,14 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MissaActivity extends AppCompatActivity {
+public class Novena extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_missa);
+        setContentView(R.layout.activity_novena);
 
-        getSupportActionBar().setTitle("पवित्र मिस्सा");
+        getSupportActionBar().setTitle("नोवेना प्रार्थना");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
