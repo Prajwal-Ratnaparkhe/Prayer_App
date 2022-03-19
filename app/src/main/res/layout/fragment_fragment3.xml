@@ -5,12 +5,25 @@
     android:layout_height="match_parent"
     tools:context=".fragment3">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment3"
-        android:gravity="center"
-       />
+        android:layout_height="wrap_content" >
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/hello_blank_fragment3"
+            android:gravity="center"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
 
 </FrameLayout>
