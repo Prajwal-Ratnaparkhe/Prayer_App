@@ -2,6 +2,7 @@ package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -11,13 +12,15 @@ import android.widget.TableLayout;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PrarthanaActivity extends AppCompatActivity {
 
-    TabLayout tabLayout;
-    TabItem tabItem1,tabItem2,tabItem3;
+    RecyclerView recyclerView;
+    List<Versions> versionsList;
 
-    ViewPager2 viewPager2;
-    ViewPageAdapter viewPageAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,50 +32,29 @@ public class PrarthanaActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("प्रार्थना");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        tabLayout=(TabLayout) findViewById(R.id.tabLayout1);
-        tabItem1 =(TabItem) findViewById(R.id.tab1);
-        tabItem2 =(TabItem) findViewById(R.id.tab2);
-        tabItem3 =(TabItem) findViewById(R.id.tab3);
-        viewPager2=(ViewPager2)findViewById(R.id.vpager);
+        recyclerView = findViewById(R.id.recyclerView);
 
+        initData();
+        setRecyclerView();
 
-        FragmentManager fragmentManager =getSupportFragmentManager();
-        
-       viewPageAdapter =new ViewPageAdapter(fragmentManager,getLifecycle());
-       
-       viewPager2.setAdapter(viewPageAdapter);
-       
-
-     ////  tabLayout.addTab(tabLayout.newTab().setText("First tab"));
-        ////    tabLayout.addTab(tabLayout.newTab().setText("second tab"));
-        ////    tabLayout.addTab(tabLayout.newTab().setText("Third tab"));
-        
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager2.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
-
-        viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
-            @Override
-            public void onPageSelected(int position) {
-                tabLayout.selectTab(tabLayout.getTabAt(position));
-            }
-        });
 
     }
 
+    private void setRecyclerView() {
+        VersionAdapter versionAdapter = new VersionAdapter(versionsList);
+        recyclerView.setAdapter(versionAdapter);
+        recyclerView.setHasFixedSize(true);
 
+    }
 
+    private void initData() {
+
+        versionsList = new ArrayList<>();
+        versionsList.add(new Versions("Lorem Ipsum", " ", " ", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."));
+        versionsList.add(new Versions("Lorem Ipsum", " ", " ", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."));
+        versionsList.add(new Versions("Lorem Ipsum", " ", " ", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."));
+        versionsList.add(new Versions("Lorem Ipsum", " ", " ", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."));
+        versionsList.add(new Versions("Lorem Ipsum", " ", " ", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."));
+
+    }
 }
