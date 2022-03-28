@@ -1,4 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<!--    <item android:id="@+id/switch_action_bar"-->
+<!--        android:title="Switch"-->
+<!--        android:actionLayout="@layout/use_switch"-->
+<!--        app:showAsAction="always"/>-->
+
+    <item
+        android:id="@+id/translate"
+        android:title="tranlation"
+        android:icon="@drawable/translate"
+
+        app:showAsAction="always"
+        />
+
+
+
+
+<item
+    app:showAsAction="always"
+    android:title=" "
+    android:icon="@drawable/more">
+
+   <menu>
+
+
+
+
+       <item
+           android:title="Share"
+           android:id="@+id/share"
+           app:showAsAction="never"
+           android:icon="@drawable/share"/>
+
+       <item
+           android:title="Rate"
+           android:id="@+id/rate"
+           app:showAsAction="never"
+           android:icon="@drawable/review"
+           />
+
+       <item
+           android:title="Exit"
+           android:id="@+id/exit"
+           app:showAsAction="never"
+           android:icon="@drawable/exit"/>
+
+   </menu>
+
+
+
+
+
+</item>
+
+
+
+
+
 
 </menu>

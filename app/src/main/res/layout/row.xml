@@ -12,7 +12,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/linear_layout"
         android:orientation="vertical"
-        android:background="#D6D2D2"
+        android:background="@drawable/shape_background1"
+
+
+
         >
         <TextView
             android:layout_width="wrap_content"
@@ -29,7 +32,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/expandable_layout"
-            android:background="#C7F5CC"
+            android:background="@drawable/shape_background2"
+
 
             >
             <TextView

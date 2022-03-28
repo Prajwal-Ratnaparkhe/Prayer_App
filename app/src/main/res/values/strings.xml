@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">स्वर्ग द्वार  </string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment1</string>
-    <string name="hello_blank_fragment2">Hello blank fragment2</string>
-    <string name="hello_blank_fragment3">Hello blank fragment3 Hello blank fragment3 Hello blank fragment3 Hello blank fragment3 Hello blank fragment3</string>
+    <string name="selectedlanguage">English</string>
+    <string name="language">Change language</string>
+
+
 </resources>
