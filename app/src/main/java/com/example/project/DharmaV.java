@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.Resources;
@@ -37,11 +38,37 @@ public class DharmaV extends AppCompatActivity {
 
 
 
+
+
+
+
+        // single item array instance to store
+        // which element is selected by user
+        // initially it should be set to zero meaning
+        // none of the element is selected by default
+        final int[] checkedItem = {-1};
+
+        // handle the button to open the alert dialog with
+        // the single item selection when clicked
         language_dialog.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
 
-                final String[] language ={"English","हिन्दी "};
+                // AlertDialog builder instance to build the alert dialog
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(DharmaV.this);
+
+                // set the custom icon to the alert dialog
+
+
+                // title of the alert dialog
+                alertDialog.setTitle("Choose an language");
+
+                // list of the items to be displayed to
+                // the user in the form of list
+                // so that user can select the item from
+                //             final String[] listItems = new String[]{"English", "Marathi (मराठी )", "Machine Learning"};
+
+                final String[] language ={"English","मराठी "};
 
                 int checkItem;
 
@@ -55,47 +82,78 @@ public class DharmaV extends AppCompatActivity {
 
                 }
 
-                final AlertDialog.Builder builder=new AlertDialog.Builder(DharmaV.this);
-                builder.setTitle("select a language")
-                        .setSingleChoiceItems(language, checkItem, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
+                // the function setSingleChoiceItems is the function which builds
+                // the alert dialog with the single item selection
+                alertDialog.setSingleChoiceItems(language, checkedItem[0], new DialogInterface.OnClickListener() {
+                    @SuppressLint("SetTextI18n")
+                    @Override
+                    public void onClick(DialogInterface dialog, int i) {
 
-                                language_dialog.setText(language[i]);
+                        // update the selected item which is selected by the user
+                        // so that it should be selected when user opens the dialog next time
+                        // and pass the instance to setSingleChoiceItems method
+                        checkedItem[0] = i;
 
-                                if(language[i].equals("English"))
-                                {
 
-                                    initData();
-                                    setRecyclerView();
-                                    context = LocalHelper.setLocale(DharmaV.this,"en");
-                                    resources=context.getResources();
-                                    helloworldtext.setText(resources.getString(R.string.language));
 
-                                }
 
-                                if(language[i].equals("हिन्दी "))
-                                {
+                        language_dialog.setText(language[i]);
 
-                                    initData2();
-                                    setRecyclerView2();
-                                    context = LocalHelper.setLocale(DharmaV.this,"hi");
-                                    resources=context.getResources();
-                                    helloworldtext.setText(resources.getString(R.string.language));
+                        if(language[i].equals("English"))
+                        {
 
-                                }
-                            }
-                        })
-                        .setPositiveButton("ok", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                dialogInterface.dismiss();
-                            }
-                        });
+                            initData();
+                            setRecyclerView();
+                            context = LocalHelper.setLocale(DharmaV.this,"en");
+                            resources=context.getResources();
+                            helloworldtext.setText(resources.getString(R.string.language));
 
-                builder.create().show();
+                        }
+
+
+
+
+                        if(language[i].equals("मराठी "))
+                        {
+
+                            initData2();
+                            setRecyclerView2();
+                            context = LocalHelper.setLocale(DharmaV.this,"hi");
+                            resources=context.getResources();
+                            helloworldtext.setText(resources.getString(R.string.language));
+
+                        }
+
+
+
+                        // now also update the TextView which previews the selected item
+                        helloworldtext.setText("Selected Language  is : " + language[i]);
+
+                        // when selected an item the dialog should be closed with the dismiss method
+                        dialog.dismiss();
+                    }
+                });
+
+                // set the negative button if the user
+                // is not interested to select or change
+                // already selected item
+                alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+
+                // create and build the AlertDialog instance
+                // with the AlertDialog builder instance
+                AlertDialog customAlertDialog = alertDialog.create();
+
+                // show the alert dialog when the button is clicked
+                customAlertDialog.show();
             }
         });
+
+
 
 
 
