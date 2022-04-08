@@ -15,7 +15,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DharmaV extends AppCompatActivity {
+public class PaviBible extends AppCompatActivity {
 
 
     RecyclerView recyclerView;
@@ -28,14 +28,14 @@ public class DharmaV extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dharma_v);
+        setContentView(R.layout.activity_pavibible);
 
-        getSupportActionBar().setTitle("मिस्सा धर्माविधी");
+        getSupportActionBar().setTitle("पवित्र बायबल ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         language_dialog = (TextView)findViewById(R.id.dialog_language);
         helloworldtext = (TextView)findViewById(R.id.textview);
-
 
 
 
@@ -55,7 +55,7 @@ public class DharmaV extends AppCompatActivity {
             public void onClick(View v) {
 
                 // AlertDialog builder instance to build the alert dialog
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(DharmaV.this);
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(PaviBible.this);
 
                 // set the custom icon to the alert dialog
 
@@ -104,7 +104,7 @@ public class DharmaV extends AppCompatActivity {
 
                             initData();
                             setRecyclerView();
-                            context = LocalHelper.setLocale(DharmaV.this,"en");
+                            context = LocalHelper.setLocale(PaviBible.this,"en");
                             resources=context.getResources();
                             helloworldtext.setText(resources.getString(R.string.language));
 
@@ -118,7 +118,7 @@ public class DharmaV extends AppCompatActivity {
 
                             initData2();
                             setRecyclerView2();
-                            context = LocalHelper.setLocale(DharmaV.this,"hi");
+                            context = LocalHelper.setLocale(PaviBible.this,"hi");
                             resources=context.getResources();
                             helloworldtext.setText(resources.getString(R.string.language));
 
@@ -127,7 +127,7 @@ public class DharmaV extends AppCompatActivity {
 
 
                         // now also update the TextView which previews the selected item
-                        helloworldtext.setText("Selected Language  is : " + language[i]);
+                        helloworldtext.setText("Selected Language is : " + language[i]);
 
                         // when selected an item the dialog should be closed with the dismiss method
                         dialog.dismiss();
@@ -156,12 +156,11 @@ public class DharmaV extends AppCompatActivity {
 
 
 
-
         recyclerView = findViewById(R.id.recyclerView);
 
 
-        initData();
-        setRecyclerView();
+        initData2();
+        setRecyclerView2();
 
 
     }

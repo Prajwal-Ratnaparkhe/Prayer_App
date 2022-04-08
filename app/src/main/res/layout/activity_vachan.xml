@@ -45,7 +45,7 @@
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:gravity="center"
-            android:text="ENGLISH"
+            android:text="मराठी"
             android:textColor="@color/white" />
 
         <ImageView

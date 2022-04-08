@@ -12,7 +12,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:background="@drawable/bg"
-        android:weightSum="10"
+        android:weightSum="5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
@@ -47,12 +47,14 @@
             android:id="@+id/mainGridLayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="6"
+            android:layout_weight="4"
+
             android:alignmentMode="alignMargins"
-            android:columnCount="2"
+            android:columnCount="3"
             android:columnOrderPreserved="false"
+
             android:padding="5dp"
-            android:rowCount="3"
+            android:rowCount="5"
 
             >
 
@@ -63,10 +65,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
                 app:cardCornerRadius="30dp"
                 app:cardElevation="30dp"
 
@@ -77,12 +79,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
+                    android:layout_margin="1dp"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="104dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/pra1"
                         android:textAlignment="center" />
@@ -105,10 +107,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
                 app:cardCornerRadius="30dp"
                 app:cardElevation="30dp">
 
@@ -116,12 +118,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
+                    android:layout_margin="1dp"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="104dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/pra2"
                         android:textAlignment="center"/>
@@ -131,7 +133,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="पवित्र मिस्सा"
+                        android:text="पवित्र बलिदान "
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -148,10 +150,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
                 app:cardCornerRadius="30dp"
                 app:cardElevation="30dp">
 
@@ -159,12 +161,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
+                    android:layout_margin="1dp"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="104dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/pra3"
                         android:textAlignment="center"/>
@@ -174,7 +176,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="भजन "
+                        android:text="पवित्र बायबल "
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -188,10 +190,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
                 app:cardCornerRadius="30dp"
                 app:cardElevation="30dp">
 
@@ -199,14 +201,175 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
+                    android:layout_margin="1dp"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="104dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/pra1"
+                        android:textAlignment="center"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="पवित्र बलिदान गीत  "
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/pra2"
+                        android:textAlignment="center"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="रोजरी माला विनंती "
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/pra3"
+                        android:textAlignment="center"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="मसामूहिक प्रार्थना "
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/pra1"
+                        android:textAlignment="center"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="प्रसंगानुसार प्रार्थना"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/pra3"
                         android:textAlignment="center"/>
 
                     <TextView
@@ -223,18 +386,14 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- Row 2 -->
-
-            <!-- Column 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
                 app:cardCornerRadius="30dp"
                 app:cardElevation="30dp">
 
@@ -242,91 +401,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
+                    android:layout_margin="1dp"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="104dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pra2"
-                        android:textAlignment="center"/>
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="माला विनंती "
-                        android:textColor="@android:color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- Column 2 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="30dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="104dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pra3"
-                        android:textAlignment="center"/>
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="मिस्सा धर्माविधी "
-                        android:textColor="@android:color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="30dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="104dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/pra1"
                         android:textAlignment="center"/>
@@ -336,7 +416,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="स्थितिजन्य वचन"
+                        android:text="सकाळची प्रार्थना "
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -349,10 +429,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
                 app:cardCornerRadius="30dp"
                 app:cardElevation="30dp">
 
@@ -360,51 +440,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
+                    android:layout_margin="1dp"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="104dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pra3"
-                        android:textAlignment="center"/>
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="प्रार्थना निवेदन "
-                        android:textColor="@android:color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="30dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="104dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/pra1"
                         android:textAlignment="center"/>
@@ -414,7 +455,47 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="बायबल कहाणी "
+                        android:text="रात्रीची प्रार्थना"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/pra1"
+                        android:textAlignment="center"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="मृतांसाठी प्रार्थना"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -427,10 +508,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
                 app:cardCornerRadius="30dp"
                 app:cardElevation="30dp">
 
@@ -438,12 +519,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
+                    android:layout_margin="1dp"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="104dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/pra1"
                         android:textAlignment="center"/>
@@ -453,7 +534,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="स्थितिजन्य प्रार्थना"
+                        android:text="क्रुसाच्या वाटेची भक्ती"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -462,7 +543,122 @@
 
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="30dp">
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/pra1"
+                        android:textAlignment="center"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="धर्मशिक्षण"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/pra1"
+                        android:textAlignment="center"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="कॅथोलिक सिद्धांताबद्दल बोध "
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/pra1"
+                        android:textAlignment="center"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="गीत भजन "
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
         </GridLayout>
 

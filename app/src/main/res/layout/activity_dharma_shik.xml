@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="8dp"
-    tools:context=".DharmaV">
+    tools:context=".DharmaShik">
 
 
     <RelativeLayout
@@ -45,7 +46,7 @@
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:gravity="center"
-            android:text="ENGLISH"
+            android:text="मराठी"
             android:textColor="@color/white" />
 
         <ImageView
@@ -66,5 +67,6 @@
         android:layout_marginTop="20dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         />
+
 
 </LinearLayout>

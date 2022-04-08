@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
-    tools:context=".PrarsanganusarPrar">
+    tools:context=".PaviBible">
 
 
     <RelativeLayout
@@ -58,7 +58,6 @@
 
 
     </RelativeLayout>
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

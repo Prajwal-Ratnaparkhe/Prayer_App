@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
-    tools:context=".PrarthanaActivity">
+    tools:context=".SamanyaPrarthanaActivity">
 
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
         >
 
@@ -45,7 +45,7 @@
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:gravity="center"
-            android:text="ENGLISH"
+            android:text="मराठी "
             android:textColor="@color/white" />
 
         <ImageView

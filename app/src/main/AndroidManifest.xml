@@ -5,50 +5,74 @@
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
-        android:icon="@drawable/bg1"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@drawable/bg1"
+        android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
         <activity
-            android:name=".SthiPrar"
+            android:name=".GitBhajan"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".Khahani"
+            android:name=".KatholicSindh"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".Nivedan"
+            android:name=".DharmaShik"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".KrusachaVatechi"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MrutasathiPrar"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RatriPrar"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SakalPrar"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PaviBalidanGit"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PrarsanganusarPrar"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Vachan"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".DharmaV"
+            android:name=".PaviBible"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".MalaV"
+            android:name=".RojriMala"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Novena"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".Bhajan"
+            android:name=".PaviBalidan"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".PrarthanaActivity"
+            android:name=".SamanyaPrarthanaActivity"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".MissaActivity"
+            android:name=".SamahuhikPrar"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity

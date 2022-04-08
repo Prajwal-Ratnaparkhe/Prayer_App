@@ -15,7 +15,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Novena extends AppCompatActivity {
+public class SakalPrar extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Versions> versionsList;
@@ -28,10 +28,12 @@ public class Novena extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_novena);
+        setContentView(R.layout.activity_sthi_prar);
 
-        getSupportActionBar().setTitle("नोवेना प्रार्थना");
+        getSupportActionBar().setTitle("सकाळची प्रार्थना ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         language_dialog = (TextView)findViewById(R.id.dialog_language);
         helloworldtext = (TextView)findViewById(R.id.textview);
 
@@ -54,7 +56,7 @@ public class Novena extends AppCompatActivity {
             public void onClick(View v) {
 
                 // AlertDialog builder instance to build the alert dialog
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(Novena.this);
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(SakalPrar.this);
 
                 // set the custom icon to the alert dialog
 
@@ -103,7 +105,7 @@ public class Novena extends AppCompatActivity {
 
                             initData();
                             setRecyclerView();
-                            context = LocalHelper.setLocale(Novena.this,"en");
+                            context = LocalHelper.setLocale(SakalPrar.this,"en");
                             resources=context.getResources();
                             helloworldtext.setText(resources.getString(R.string.language));
 
@@ -117,7 +119,7 @@ public class Novena extends AppCompatActivity {
 
                             initData2();
                             setRecyclerView2();
-                            context = LocalHelper.setLocale(Novena.this,"hi");
+                            context = LocalHelper.setLocale(SakalPrar.this,"hi");
                             resources=context.getResources();
                             helloworldtext.setText(resources.getString(R.string.language));
 

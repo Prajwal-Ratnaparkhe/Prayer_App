@@ -15,9 +15,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class MissaActivity extends AppCompatActivity {
-
+public class RatriPrar extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Versions> versionsList;
@@ -27,16 +25,13 @@ public class MissaActivity extends AppCompatActivity {
     Context context;
     Resources resources;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_missa);
+        setContentView(R.layout.activity_ratri_p);
 
-        getSupportActionBar().setTitle("पवित्र मिस्सा");
+        getSupportActionBar().setTitle("रात्रीची प्रार्थना");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         language_dialog = (TextView)findViewById(R.id.dialog_language);
         helloworldtext = (TextView)findViewById(R.id.textview);
@@ -60,7 +55,7 @@ public class MissaActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 // AlertDialog builder instance to build the alert dialog
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(MissaActivity.this);
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(RatriPrar.this);
 
                 // set the custom icon to the alert dialog
 
@@ -109,7 +104,7 @@ public class MissaActivity extends AppCompatActivity {
 
                             initData();
                             setRecyclerView();
-                            context = LocalHelper.setLocale(MissaActivity.this,"en");
+                            context = LocalHelper.setLocale(RatriPrar.this,"en");
                             resources=context.getResources();
                             helloworldtext.setText(resources.getString(R.string.language));
 
@@ -123,7 +118,7 @@ public class MissaActivity extends AppCompatActivity {
 
                             initData2();
                             setRecyclerView2();
-                            context = LocalHelper.setLocale(MissaActivity.this,"hi");
+                            context = LocalHelper.setLocale(RatriPrar.this,"hi");
                             resources=context.getResources();
                             helloworldtext.setText(resources.getString(R.string.language));
 
@@ -132,7 +127,7 @@ public class MissaActivity extends AppCompatActivity {
 
 
                         // now also update the TextView which previews the selected item
-                        helloworldtext.setText("Selected Language  is : " + language[i]);
+                        helloworldtext.setText("Selected Language is : " + language[i]);
 
                         // when selected an item the dialog should be closed with the dismiss method
                         dialog.dismiss();
@@ -161,12 +156,11 @@ public class MissaActivity extends AppCompatActivity {
 
 
 
-
         recyclerView = findViewById(R.id.recyclerView);
 
 
-        initData();
-        setRecyclerView();
+        initData2();
+        setRecyclerView2();
 
 
     }
@@ -208,7 +202,6 @@ public class MissaActivity extends AppCompatActivity {
         versionsList.add(new Versions("लोरेम इप्सम", " ", " ", "लोरेम इप्सम प्रिंटिंग और टाइपसेटिंग उद्योग का केवल डमी टेक्स्ट है। लोरेम इप्सम 1500 के दशक के बाद से उद्योग का मानक डमी टेक्स्ट रहा है, जब एक अज्ञात प्रिंटर ने एक प्रकार की गैली ली और इसे एक प्रकार की नमूना पुस्तक बनाने के लिए हाथापाई की। यह न केवल पांच शताब्दियों तक जीवित रहा है, बल्कि इलेक्ट्रॉनिक टाइपसेटिंग में भी छलांग लगाई है, जो अनिवार्य रूप से अपरिवर्तित है। इसे 1960 के दशक में लोरम इप्सम पैसेज वाले लेट्रासेट शीट्स के रिलीज के साथ लोकप्रिय किया गया था, और हाल ही में एल्डस पेजमेकर जैसे डेस्कटॉप प्रकाशन सॉफ्टवेयर के साथ लोरेम इप्सम के संस्करण भी शामिल थे।"));
 
     }
-
 
 
 

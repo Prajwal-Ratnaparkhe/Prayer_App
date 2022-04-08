@@ -15,8 +15,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MalaV extends AppCompatActivity {
-
+public class MrutasathiPrar extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Versions> versionsList;
@@ -29,10 +28,11 @@ public class MalaV extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mala_v);
+        setContentView(R.layout.activity_mruta_p);
 
-        getSupportActionBar().setTitle("मला विनंती");
+        getSupportActionBar().setTitle("मृतांसाठी प्रार्थना ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         language_dialog = (TextView)findViewById(R.id.dialog_language);
         helloworldtext = (TextView)findViewById(R.id.textview);
@@ -56,7 +56,7 @@ public class MalaV extends AppCompatActivity {
             public void onClick(View v) {
 
                 // AlertDialog builder instance to build the alert dialog
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(MalaV.this);
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(MrutasathiPrar.this);
 
                 // set the custom icon to the alert dialog
 
@@ -105,7 +105,7 @@ public class MalaV extends AppCompatActivity {
 
                             initData();
                             setRecyclerView();
-                            context = LocalHelper.setLocale(MalaV.this,"en");
+                            context = LocalHelper.setLocale(MrutasathiPrar.this,"en");
                             resources=context.getResources();
                             helloworldtext.setText(resources.getString(R.string.language));
 
@@ -119,7 +119,7 @@ public class MalaV extends AppCompatActivity {
 
                             initData2();
                             setRecyclerView2();
-                            context = LocalHelper.setLocale(MalaV.this,"hi");
+                            context = LocalHelper.setLocale(MrutasathiPrar.this,"hi");
                             resources=context.getResources();
                             helloworldtext.setText(resources.getString(R.string.language));
 
@@ -128,7 +128,7 @@ public class MalaV extends AppCompatActivity {
 
 
                         // now also update the TextView which previews the selected item
-                        helloworldtext.setText("Selected Language  is : " + language[i]);
+                        helloworldtext.setText("Selected Language is : " + language[i]);
 
                         // when selected an item the dialog should be closed with the dismiss method
                         dialog.dismiss();
@@ -160,8 +160,8 @@ public class MalaV extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
 
 
-        initData();
-        setRecyclerView();
+        initData2();
+        setRecyclerView2();
 
 
     }

@@ -3,6 +3,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="selectedlanguage">English</string>
     <string name="language">Change language</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
 
 
 </resources>

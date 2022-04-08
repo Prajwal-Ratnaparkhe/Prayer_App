@@ -15,7 +15,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Khahani extends AppCompatActivity {
+public class DharmaShik extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Versions> versionsList;
@@ -28,14 +28,14 @@ public class Khahani extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_khahani);
+        setContentView(R.layout.activity_dharma_shik);
 
-        getSupportActionBar().setTitle("बायबल कहाणी");
+        getSupportActionBar().setTitle(" धर्मशिक्षण");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         language_dialog = (TextView)findViewById(R.id.dialog_language);
         helloworldtext = (TextView)findViewById(R.id.textview);
+
 
 
 
@@ -55,7 +55,7 @@ public class Khahani extends AppCompatActivity {
             public void onClick(View v) {
 
                 // AlertDialog builder instance to build the alert dialog
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(Khahani.this);
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(DharmaShik.this);
 
                 // set the custom icon to the alert dialog
 
@@ -104,7 +104,7 @@ public class Khahani extends AppCompatActivity {
 
                             initData();
                             setRecyclerView();
-                            context = LocalHelper.setLocale(Khahani.this,"en");
+                            context = LocalHelper.setLocale(DharmaShik.this,"en");
                             resources=context.getResources();
                             helloworldtext.setText(resources.getString(R.string.language));
 
@@ -118,7 +118,7 @@ public class Khahani extends AppCompatActivity {
 
                             initData2();
                             setRecyclerView2();
-                            context = LocalHelper.setLocale(Khahani.this,"hi");
+                            context = LocalHelper.setLocale(DharmaShik.this,"hi");
                             resources=context.getResources();
                             helloworldtext.setText(resources.getString(R.string.language));
 
@@ -127,7 +127,7 @@ public class Khahani extends AppCompatActivity {
 
 
                         // now also update the TextView which previews the selected item
-                        helloworldtext.setText("Selected Language  is : " + language[i]);
+                        helloworldtext.setText("Selected Language is : " + language[i]);
 
                         // when selected an item the dialog should be closed with the dismiss method
                         dialog.dismiss();
@@ -156,12 +156,11 @@ public class Khahani extends AppCompatActivity {
 
 
 
-
         recyclerView = findViewById(R.id.recyclerView);
 
 
-        initData();
-        setRecyclerView();
+        initData2();
+        setRecyclerView2();
 
 
     }

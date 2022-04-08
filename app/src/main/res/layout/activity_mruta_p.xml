@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="8dp"
-    tools:context=".PrarsanganusarPrar">
+    android:gravity="center"
+    tools:context=".MrutasathiPrar">
 
 
     <RelativeLayout
@@ -59,7 +59,6 @@
 
     </RelativeLayout>
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -67,5 +66,6 @@
         android:layout_marginTop="20dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         />
+
 
 </LinearLayout>
