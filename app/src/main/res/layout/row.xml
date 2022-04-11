@@ -5,8 +5,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="2dp"
     app:cardElevation="3dp"
+
     app:cardUseCompatPadding="true"
     >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/code_name"
-            android:text="Code Name"
+            android:text="@string/code_name"
             android:textSize="22sp"
             android:padding="16dp"
             android:textColor="@color/black"
@@ -40,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/version"
-                android:text="version"
+                android:text="@string/version"
                 android:padding="16dp"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -52,11 +54,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/api_level"
-                android:text="Api_level"
+                android:text="@string/api_level"
                 android:padding="16dp"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:textColor="@color/black"
                 />
 
@@ -64,7 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/description"
-                android:text="Description TextView"
+                android:text="@string/description_textview"
                 android:padding="16dp"
                 android:textSize="18sp"
                 android:layout_below="@id/version"
