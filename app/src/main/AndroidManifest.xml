@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.project">
+    package="com.msquare.prarthananjali">
 
     <application
         android:allowBackup="true"
@@ -11,6 +11,10 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
+
+        <activity
+            android:name=".Lanselect"
+            android:exported="false" />
         <activity
             android:name=".GitBhajan"
             android:exported="true"
@@ -78,6 +82,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+
+
         <activity
             android:name=".splash"
             android:exported="true">
@@ -87,6 +94,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
     </application>
 
 </manifest>

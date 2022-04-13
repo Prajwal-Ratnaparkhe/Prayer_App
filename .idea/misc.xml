@@ -18,6 +18,7 @@
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_katholic_sindh.xml" value="0.21979166666666666" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_khahani.xml" value="0.12681159420289856" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_krusa_vat.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_lanselect.xml" value="0.2" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_main2.xml" value="0.2234375" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_mala_v.xml" value="0.10822401614530777" />
@@ -25,17 +26,22 @@
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_mruta_p.xml" value="0.21979166666666666" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_nivedan.xml" value="0.10822401614530777" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_novena.xml" value="0.10065590312815338" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_pavibali.xml" value="0.22282608695652173" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_pavibalidangit.xml" value="0.22282608695652173" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_pavibible.xml" value="0.11503623188405797" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_prarthana.xml" value="0.264" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_ratri_p.xml" value="0.21979166666666666" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_samahuk.xml" value="0.21979166666666666" />
-        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_splash.xml" value="0.11865942028985507" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_splash.xml" value="0.264" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_sthi_prar.xml" value="0.10822401614530777" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_vachan.xml" value="0.2234375" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/activity_welcome.xml" value="0.21979166666666666" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/fragment_fragment1.xml" value="0.13043478260869565" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/fragment_fragment2.xml" value="0.13043478260869565" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/fragment_fragment3.xml" value="0.13043478260869565" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/lansebackg.xml" value="0.2234375" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/lansellistview_layout.xml" value="0.17255434782608695" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/mylist.xml" value="0.2234375" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/para.xml" value="0.2234375" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/row.xml" value="0.264" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/switch_item.xml" value="0.2234375" />
@@ -43,6 +49,8 @@
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/title.xml" value="0.2234375" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/use_switch.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/welcome_slide1.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/welcome_slide2.xml" value="0.2234375" />
+        <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/layout/welcome_slide3.xml" value="0.2234375" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/menu/menu_item.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/Prajwal/AndroidStudioProjects/project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.155" />
       </map>
