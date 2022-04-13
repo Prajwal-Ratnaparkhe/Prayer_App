@@ -36,67 +36,67 @@ public class splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
 
-//
-//        imageView=(ImageView)findViewById(R.id.SplashScreenImage); // Declare an imageView to show the animation.
-//        anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.side_slide);
-//
-//
-//
-//
-//getSupportActionBar().hide();
-//
-//        new Handler().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                Intent intent = new Intent(splash.this,MainActivity.class);
-//                startActivity(intent);
-//                finish();
-//            }
-//        },3000);
-//    }
-//}
-//
+
+        imageView=(ImageView)findViewById(R.id.SplashScreenImage); // Declare an imageView to show the animation.
+        anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.side_slide);
 
 
-        progressBar = findViewById(R.id.progressBarId);
-        textView = findViewById(R.id.textViewId);
 
-        Thread thread = new Thread(new Runnable() {
+
+getSupportActionBar().hide();
+
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                for (value = 0; value<=100; value++){
-                    try {
-                        Thread.sleep(30);
-                        progressBar.setProgress(value);
-                        setText(textView, String.valueOf(value)+"%" );
-
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        });
-
-        thread.start();
-
-        int secondsDelayed = 3;
-        new Handler().postDelayed(new Runnable() {
-            public void run() {
-                startActivity(new Intent(splash.this,   Lanselect.class));
+                Intent intent = new Intent(splash.this,Lanselect.class);
+                startActivity(intent);
                 finish();
             }
-        }, secondsDelayed * 1000);
-
+        },3000);
     }
-
-    private void setText(final TextView text,final String value){
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                text.setText(value);
-            }
-        });
-    }
-
 }
+
+
+//
+//        progressBar = findViewById(R.id.progressBarId);
+//        textView = findViewById(R.id.textViewId);
+//
+//        Thread thread = new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                for (value = 0; value<=100; value++){
+//                    try {
+//                        Thread.sleep(30);
+//                        progressBar.setProgress(value);
+//                        setText(textView, String.valueOf(value)+"%" );
+//
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//        });
+//
+//        thread.start();
+//
+//        int secondsDelayed = 3;
+//        new Handler().postDelayed(new Runnable() {
+//            public void run() {
+//                startActivity(new Intent(splash.this,   Lanselect.class));
+//                finish();
+//            }
+//        }, secondsDelayed * 1000);
+//
+//    }
+//
+//    private void setText(final TextView text,final String value){
+//        runOnUiThread(new Runnable() {
+//            @Override
+//            public void run() {
+//                text.setText(value);
+//            }
+//        });
+//    }
+//
+//}
 
